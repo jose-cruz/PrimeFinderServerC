@@ -1,0 +1,75 @@
+ -------------------------------------------------------------------------------
+ EDIT       /u/wtamu/c332106/FindSumCube.c                  Columns 00001 00072 
+ ****** ***************************** Top of Data ******************************
+ ==MSG> -Warning- The UNDO command is not available until you change            
+ ==MSG>           your edit profile using the command RECOVERY ON.              
+ 000001 /**                                                                     
+ 000002  * Name: Jose Cruz                                                      
+ 000003  * Fi e: FindSumCube.c                                                  
+ 000004  * Date: 02/25/2015                                                     
+ 000005  * This program will find the numbers among the                         
+ 000006  * numbers 1 through 999 with the property that                         
+ 000007  * the number is equal to the sum of the cubes                          
+ 000008  * of their digits.                                                     
+ 000009  */                                                                     
+ 000010  #include <stdio.h>                                                     
+ 000011  int main(){                                                            
+ 000012     int i, sumOfCubedDigits, temp, j;                                   
+ 000013     int cube[3];                                                        
+ 000014     for (i = 1; i <= 999; i++){                                         
+ 000015        j = 0;                   
+ 000016        sumOfCubedDigits = 0;                 
+ 000017        temp = i;                             
+ 000018        while(temp > 0){                      
+ 000019           cube[j] = temp%10;                 
+ 000020           j++;                               
+ 000021           temp /= 10;                        
+ 000022        }                                     
+ 000023        for (j = 0; j < 3; j++){              
+ 000024           cube[j] = cube[j]*cube[j]*cube[j]; 
+ 000025        }                                     
+ 000026        for (j = 0; j < 3; j++){              
+ 000027           sumOfCubedDigits += cube[j];       
+ 000028        }                                     
+ 000029        if(i == sumOfCubedDigits){            
+ 000030           printf("%d\n", i);                 
+ 000031        }                                     
+ 000032     }                                        
+ 000033     return 0;                                
+ 000034    }                                     
+ 000035                                          
+ 000036 /*  end of file                          
+ 000037     enter your code above this comment   
+ 000038                                          
+ 000039 } */                                     
+
+
+**********************************************************                                        
+
+
+ Pathname . : /u/wtamu/c332106                                                  
+                                                                                
+ Command  Filename        Message          Type Permission Audit  Ext  Fmat     
+ -------------------------------------------------------------------------------
+          .                                Dir  rwx------  fff---      ----     
+          ..                               Dir  rwxr-xr-x  fff---      ----     
+          .sh_history                      File rw-------  fff--- --s- ----     
+          a.out           Ended 0          File rwxrwxrwx  fff--- --s- ----     
+          prog1.c                          File rw-r--r--  fff--- --s- nl       
+          template                         File rw-r--r--  fff--- --s- ----     
+          FindSumCube.c   Edited           File rw-r--r--  fff--- --s- ----     
+          Hello.c                          File rw-r--r--  fff--- --s- ----     
+          Hello.o                          File rw-rw-rw-  fff--- --s- ----     
+ ******************************* Bottom of data ********************************
+
+**********************************************************                                        
+
+
+ -------------------------------------------------------------------------------
+ BROWSE    /tmp/C332106.11:31:06.28.stdout.ispfudl    Line 00000000 Col 001 003 
+********************************* Top of Data **********************************
+153                                                                             
+370                                                                             
+371                                                                             
+407                                                                             
+******************************** Bottom of Data ********************************
